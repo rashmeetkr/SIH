@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Locate Post Office</h2>
+  <p></p>
+  <form action="/track_postoffice" method="post">
+    <div class="form-group">
+      <label for="stateid">State</label>
+      <select class="form-control" id="stateid">
+        <option>Delhi</option>
+        <option>Maharashtra</option>
+        <option>Rajasthan</option>
+        <option>Madhya Pradesh</option>
+       </select>
+       <p></p>
+      <label for="cityid">City</label>
+      <select class="form-control" id="cityid">
+        <option>New Delhi</option>
+        <option>Mumbai</option>
+        <option>Bhopal</option>
+        <option>Jaipur</option>
+      </select>
+      <p></p>
+      <label for="pincode_id">Pincode</label>
+      <input type="text" class="form-control" id="pincode_id" name="pincode">
+      <p></p>
+      <label for="serviceid">Service</label>
+      <select class="form-control" id="serviceid">
+        <option>Express-Parcel</option>
+        <option>E-Payment</option>
+        <option>Postal Order</option>
+        <option>Money Order</option>
+       </select>
+    </div>
+        <button type="submit" class="btn btn-primary center-block">Submit</button>
+  </form>
+</div>
+
+</body>
+</html>
